@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23uW3FSMy50sZ3l0xM0c0+H4v6C/CptkC4w" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav>
+    <h2>Phone Finder</h2>
+    <button class="btn btn-primary">Login</button>
+  </nav>
+
+  
+  <header>
+    <h1>Find Your Ideal Phone</h1>
+    <p>Browse through a wide range of phones and choose your perfect match.</p>
+    <input type="text" id="searchField" placeholder="Search for phones..." />
+    <button class="btn btn-primary" onclick="searchPhones()">Search</button>
+  </header>
+
+
+  <div id="loading" style="display: none;">
+    <h2>Loading...</h2>
+  </div>
+
+  
+  <div id="phone-container"></div>
+
+  
+ 
+
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modal-content">
+    
+    </div>
+
+    </div>
+  </div>
+  <button id="showAllBtn" class="hidden" onclick="toggleShowAll()">Show All</button>
+
+  <footer>
+    <p>&copy; 2024 Phone Finder. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
